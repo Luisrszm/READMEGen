@@ -60,7 +60,6 @@ function writeToFile(fileName, data) {          // fileName = './utils/README.md
     });
 };
 
-}
 
 // TODO: Create a function to initialize app
 async function init() {
