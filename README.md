@@ -21,7 +21,7 @@ In order to initialize we have to open a dedicate terminal in the same path as w
 ## Usage
 
 Answer all the questions that youll be prompted with afte running the `node index.js` command.
-Follow this tutorial to know how to use this tool properly: [tutorial video link]().
+Follow this tutorial to know how to use this tool properly: [tutorial video link](https://drive.google.com/file/d/1MhYZuJ7Ov0ZceJ6q8ylEMfvone6sTpns/view).
 The end README.md file will be stored inside the utils directory.
 
 ## License
@@ -46,6 +46,11 @@ Example of sample questions and random input to ilustrate what should be expecte
 ![Example of sample questions and random input just to ilustrate](./img/randomdata.png "Exmaple")
 
 The end README.md file will be store inside the utils directory.
+
+QR Code to the video tutorial:
+
+![image](https://github.com/user-attachments/assets/d5889a1e-63db-4a91-91b8-0a9629ba0be9)
+
 
 ## Questions
 
