@@ -16,7 +16,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Enter instructions for the INSTLLATION section: ',
+        message: 'Enter instructions for the INSTALLATION section: ',
         name: 'installation'
     },
     {
@@ -28,7 +28,7 @@ const questions = [
         type: 'list',
         message: 'Select a LICENSE from the list: ',
         name: 'license',
-        choice: ['MIT', 'CC0', 'Apache']
+        choice: ['MIT', 'GPLv3', 'Apache 2.0']
     },
     {
         type: 'input',
@@ -49,6 +49,11 @@ const questions = [
         type: 'input',
         message: 'Type your Email to reach out for QUESTIONS:  ',
         name: 'questionsEmail'
+    },
+    {
+        type: 'input',
+        message: 'Type some instructions on how to reach you via email: ',
+        name: 'emailQAInstructions'
     }
 ];
 
@@ -57,15 +62,16 @@ function writeToFile(fileName, data) {          // fileName = './utils/README.md
     fs.appendFile(fileName, data, function (err) {
         if (err) throw err;
         console.log('Saved!');
-    });
+});
 };
-
 
 // TODO: Create a function to initialize app
 async function init() {
     const answer = await inquirer.prompt(questions);
     console.log(answer);
-  
+    ans = generateMarkdown(answer);
+    writeToFile('./utils/README.md', ans);
 };
+
 // Function call to initialize app
 init();
