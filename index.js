@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 import inquirer from 'inquirer';
 import fs from 'fs';
-import generateMarkdown from './utils/generateMarkdown';
+import generateMarkdown from './utils/generateMarkdown.js';
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -25,10 +25,14 @@ const questions = [
         name: 'usage'
     },
     {
-        type: 'list',
+        type: 'rawlist',
         message: 'Select a LICENSE from the list: ',
         name: 'license',
-        choice: ['MIT', 'GPLv3', 'Apache 2.0']
+        choices: [
+            {name:'MIT', value:'MIT'}, 
+            {name:'GPLv3', value:'GPLv3'}, 
+            {name:'Apache 2.0', value:'Apache 2.0'}
+        ]
     },
     {
         type: 'input',
@@ -69,7 +73,7 @@ function writeToFile(fileName, data) {          // fileName = './utils/README.md
 async function init() {
     const answer = await inquirer.prompt(questions);
     console.log(answer);
-    ans = generateMarkdown(answer);
+    let ans = generateMarkdown(answer);
     writeToFile('./utils/README.md', ans);
 };
 

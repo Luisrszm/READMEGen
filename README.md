@@ -1,56 +1,57 @@
 # READMEGen
 
-## 1. Description
+## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This repository is for building a CLI interface that ease the creation of README files. The objective is to present a simple and user friendly interface where anyone can build up the most common components on a README file to upload into Github for any kind of software development project.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+## Table of Contents
 
-## 2. Table of Contents
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+6. [Test](#test)
+7. [Questions](#questions)
+8. [License](#license)
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Installation
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+In order to initialize we have to open a dedicate terminal in the same path as where the index.js is stored. Inside the terminal input `node index.js` in order to run the script just after installing the required dependencies (fs, inquirer).
 
-## 3. Installation
+## Usage
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Answer all the questions that youll be prompted with afte running the `node index.js` command.
+Follow this tutorial to know how to use this tool properly: [tutorial video link]().
+The end README.md file will be stored inside the utils directory.
 
-## 4. Usage
+## License
 
-Provide instructions and examples for use. Include screenshots as needed.
+Copyright (c) [Luisrszm](https://github.com/Luisrszm). All rights reserved.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+## Contributing
 
-## 5. License
+There are many ways in which you can participate in this project, for example:
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
-## 6. Contributing
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+- Submit bugs and feature requests, and help us verify as they are checked in
+- Review source code changes
+- Review the documentation and make pull requests for anything from typos to additional and new content
 
 ---
 
-## 7. Tests
+## Tests
+Example of sample questions and random input to ilustrate what should be expected:
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+![Example of sample questions and random input just to ilustrate](./img/randomdata.png "Exmaple")
 
-## 8. Questions
+The end README.md file will be store inside the utils directory.
+
+## Questions
+
+If you are interested in fixing issues and contributing directly to the code base or have questions, please contact at:
+- Email: rzmz1639@gmail.com
+- GitHub: [Luisrszm](https://github.com/Luisrszm)
 
 ## Badges
 

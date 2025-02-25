@@ -1,6 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
+export const renderLicenseBadge = function (license) {
   if (!license) {return ''}
   switch (license) {
     case "MIT":
@@ -17,7 +17,7 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
+export const renderLicenseLink = function (license) {
   if (!license) {return ''}
   switch (license) {
     case "MIT":
@@ -33,7 +33,7 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license, user) {
+export const renderLicenseSection = function (license, user) {
   if (!license) {return ''}
   switch (license) {
     case "MIT":
@@ -55,15 +55,15 @@ function renderLicenseSection(license, user) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  docuString = `# ${data.title}
+  let docuString = `# ${data.title}
 
   [![License: ${data.license}](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
   
-  ## 1. Description
+  ## Description
 
   ${data.description}
 
-  ## 2. Table of contents
+  ## Table of contents
 
   1. [Description](#description)
   2. [Installation](#installation)
@@ -75,28 +75,28 @@ function generateMarkdown(data) {
 
   ---
   
-  ## 3. Installation
+  ## Installation
 
   ${data.installation}
 
-  ## 4. Usage
+  ## Usage
 
   ${data.usage}
 
-  ## 5. Contributing
+  ## Contributing
 
   ${data.contributing}
 
-  ## 6. Test
+  ## Test
 
   ${data.test}
 
-  ## 7. Questions
+  ## Questions
 
   - GitHub Contact: [${data.questionsGithub}](https://github.com/${data.questionsGithub})
   - Email Address: ${data.questionsEmail}, ${data.emailQAInstructions}
 
-  ## 8. License
+  ## License
 
   ${renderLicenseSection(data.license, data.questionsGithub)}
 
